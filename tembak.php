@@ -106,7 +106,7 @@ echo color("red","\n|====================================|\n");
         sleep(1);
         }
         sleep(3);
-        $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
+        $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GFBARUSBY"}');
         $message1 = fetch_value($goride,'"message":"','"');
         echo "\n".color("green","+] Message: ".$message1);
         echo "\n".color("yellow","!] Claim voc Goride");
